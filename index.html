@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Arcade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Geist:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1F1E1D;
+    --surface: #262624;
+    --border: #3D3A36;
+    --text: #F5F1E8;
+    --muted: #8A847A;
+    --accent: #D97757;
+    --accent-hover: #E8896A;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    min-height: 100vh;
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% 0%, rgba(217,119,87,0.06), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 50% 100%, rgba(217,119,87,0.03), transparent 70%);
+    color: var(--text);
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    gap: 40px;
+  }
+  .head { text-align: center; max-width: 520px; }
+  .eyebrow {
+    font-family: 'Geist Mono', ui-monospace, monospace;
+    font-size: 10px;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(40px, 9vw, 64px);
+    letter-spacing: -0.025em;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+  }
+  h1 .mark { width: 30px; height: 30px; color: var(--accent); flex-shrink: 0; }
+  .sub {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--muted);
+    margin-top: 18px;
+    line-height: 1.5;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 600px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 26px 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 24px 48px -28px rgba(0,0,0,0.7);
+  }
+  .card h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+  }
+  .card p { color: var(--muted); font-size: 13.5px; line-height: 1.55; }
+  .card .play {
+    margin-top: 6px;
+    font-family: 'Geist Mono', ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  footer {
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.7;
+    max-width: 460px;
+  }
+  footer a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+  footer a:hover { color: var(--text); }
+</style>
+</head>
+<body>
+  <div class="head">
+    <div class="eyebrow">a small arcade</div>
+    <h1>
+      <svg class="mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 1 L13.6 9.4 L22 12 L13.6 14.6 L12 23 L10.4 14.6 L2 12 L10.4 9.4 Z"/>
+      </svg>
+      Canvas Arcade
+    </h1>
+    <p class="sub">Two browser games built from scratch — no frameworks, no dependencies. Just open and play.</p>
+  </div>
+
+  <div class="grid">
+    <a class="card" href="snake.html">
+      <h2>Snake</h2>
+      <p>The classic, with a tapering body, eyes that look where it's heading, and keyboard or swipe controls.</p>
+      <span class="play">Play →</span>
+    </a>
+    <a class="card" href="alien-invaders.html">
+      <h2>Alien Invaders</h2>
+      <p>A relaxed fixed-shooter. Drag to move, hold to fire, clear escalating waves. Synthesized sound included.</p>
+      <span class="play">Play →</span>
+    </a>
+  </div>
+
+  <footer>
+    Built by &lt;Your Name&gt; · <a href="https://github.com/&lt;your-username&gt;/canvas-arcade">Source on GitHub</a><br>
+    A personal, non-commercial project. Not affiliated with any company.
+  </footer>
+</body>
+</html>
