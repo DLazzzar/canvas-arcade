@@ -37,4 +37,4 @@ The visual style — warm coral on charcoal, with a four-point sparkle motif —
 
 ## License
 
-MIT © 2026 &lt;Your Name&gt; — see [LICENSE](LICENSE). Use the code however you like; a credit is appreciated but not required.
+MIT © 2026 &lt;DLazzzar&gt; — see [LICENSE](LICENSE). Use the code however you like; a credit is appreciated but not required.
