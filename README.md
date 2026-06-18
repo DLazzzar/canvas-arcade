@@ -12,11 +12,6 @@ Two small browser games built from scratch with vanilla JavaScript and the HTML5
 
 **Alien Invaders** — a relaxed take on the fixed-shooter. Drag to move, hold to fire (the fire rate ramps up the longer you hold), escalating waves, a light/dark toggle, and fully synthesized sound.
 
-<!-- Add screenshots: drop two PNGs or GIFs into /screenshots, then uncomment:
-![Snake](screenshots/snake.png)
-![Alien Invaders](screenshots/alien-invaders.png)
--->
-
 ## Built with
 
 - Vanilla JavaScript (ES6) — zero libraries, zero build tooling
