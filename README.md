@@ -2,7 +2,7 @@
 
 Two small browser games built from scratch with vanilla JavaScript and the HTML5 Canvas — no frameworks, no build step, no dependencies. Open a file and play.
 
-**▶ Play live:** https://&lt;your-username&gt;.github.io/canvas-arcade/
+**▶ Play live:** https://&lt;dlazzzar&gt;.github.io/canvas-arcade/
 
 ---
 
